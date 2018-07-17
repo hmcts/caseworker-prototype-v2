@@ -1,0 +1,199 @@
+// Path to assets for use with the file-url function
+// in the govuk frontend toolkit"s url-helpers partial
+$path: "/public/images/";
+
+// Import GOV.UK Frontend
+@import "@govuk-frontend/frontend/all";
+
+// Patterns that aren"t in GOV.UK Frontend
+@import "patterns/check-your-answers";
+@import "patterns/related-items";
+
+// JUI styles
+@import "jui/all";
+
+mark.comment {
+  background-color: $govuk-orange;
+}
+
+.medium-toolbar-arrow-under:after {
+  border-color: #2f1e07 transparent transparent;
+}
+
+.medium-toolbar-arrow-over:before {
+  border-color: transparent transparent #2f1e07 ;
+}
+
+.submenu{
+  background: 	#005ea5;
+  height: 10px;
+  width: 100%;
+}
+
+#subHeader{
+	height:50px;
+  width: 100%;
+	background-color:#005EA5;
+	text-align:left;
+	padding-top:1px;
+padding-left:20px;}
+// text-align-last:right;
+
+.textWhite{
+  color:#fff;}
+
+
+.govuk-c-table__cell-link {
+  @include govuk-font-regular-19;
+
+  padding: em($govuk-spacing-scale-2, 19px) em($govuk-spacing-scale-4, 19px) em($govuk-spacing-scale-2, 19px) 0;
+  border-bottom: 1px solid $govuk-border-colour;
+  text-align: left;
+  padding-left: 0px;
+}
+
+//
+
+.white-text{
+    color: white;
+}
+
+
+
+
+
+
+
+
+//Inside payment classes//
+
+$table-padding: 10px;
+
+.govuk-c-table__cell-CCD-column1-test{
+  @include govuk-font-regular-19;
+  border-bottom: 1px solid $govuk-border-colour;
+  padding: $table-padding;
+  text-align: left;
+  width: 400px;
+}
+
+.govuk-c-table__cell-CCD-column2-test{
+  @include govuk-font-regular-19;
+  border-bottom: 1px solid $govuk-border-colour;
+  padding: $table-padding;
+  text-align: left;
+  width: 300px;
+
+}
+.govuk-c-table__cell-CCD-column3-test{
+  @include govuk-font-regular-19;
+  border-bottom: 1px solid $govuk-border-colour;
+  text-align: right;
+  padding: $table-padding;
+  padding-left: 0px;
+  width: 350px;
+}
+
+
+// RESPONSIVE table
+
+body {
+  line-height: 1.25;
+}
+
+table {
+  border-bottom: 1px solid #fff;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  table-layout: auto;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em 0;
+  text-align: left;
+
+}
+
+table th {
+  font-size: 19px;
+}
+
+@media screen and (max-width: 650px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+
+  }
+
+  table tr {
+    border-bottom: 5px solid #ddd;
+    display: block;
+    margin-bottom: 25px;
+
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+.no-border-bottom {
+  border-bottom: 0;
+}
+
+.linked-payment-top {
+  border-left: 5px solid #005ea5;
+  padding-left: 7px;
+}
+
+.linked-payment-bottom {
+  border-left: 5px solid #005ea5;
+  padding-left: 7px;
+
+}

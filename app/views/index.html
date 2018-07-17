@@ -1,0 +1,248 @@
+{% extends "layouts/service/base.html" %}
+
+{% block page_title %}
+  Caseworker prototype
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-width-container">
+
+  <main role="main" class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">Caseworker prototype
+          <span class="govuk-caption-xl">Version 2</span>
+        </h1>
+
+
+          {{ govukButton({
+            "text": "Start journey",
+            "href": "/case-list"
+          }) }}
+
+          <details class="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                  All pages
+                </span>
+              </summary>
+
+                  <div class="govuk-details__text">
+
+                    <li><a href="/case-list">
+                      Case list
+                    </a></li>
+
+                    <li><a href="/case-view">
+                      Case - 2309-1129-5569-2669
+                    </a></li>
+
+                    <li><a href="/RC-1521-1095-0964-3143">
+                      Payment - RC-1521-1095-0964-3143
+                    </a></li>
+
+                  </div>
+            </details>
+
+            <h3 class="govuk-heading-m">MVP for CCD and fees and payments to develop</h3>
+
+            {{ govukButton({
+              "text": "MVP examples",
+              "href": "/case-view-examples"
+            }) }}
+
+            <br>
+
+        <!-- <h3 class="govuk-heading-m">Future scenario examples for future releases</h3>
+
+        {{ govukButton({
+          "text": "Future examples",
+          "href": ""
+        }) }} -->
+
+          <!-- <details class="govuk-details">
+              <summary class="govuk-c-details__summary">
+                <span class="govuk-c-details__summary-text">
+                  All pages
+                </span>
+              </summary>
+
+                  <div class="govuk-details__text">
+                    <li><a href="/payment-screens-mvp/service-payment-summary-mvp">
+                      Payment summary
+                    </a></li>
+
+                    <li><a href="/payment-screens-mvp/service-payment-screen-mvp">
+                      Make payment
+                    </a></li>
+            </details> -->
+
+        <br>
+
+
+
+        <p class="govuk-body govuk-!-f-19">In development</p>
+        <p class="govuk-body govuk-!-f-19">13 June 2018 - 18 July 2018 </p>
+        <div class="govuk-body govuk-!-f-19"><strong class="govuk-body govuk-!-w-bold">What's new:</strong>
+          <li>Issue column removed</li>
+          <li>Organisational name feild changed to PBA account name</li>
+          <li>Responsive tables</li>
+          </div>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+
+
+
+
+      <details class="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        Previous prototype versions
+      </span>
+    </summary>
+    <div class="govuk-details__text">
+      <ul class="govuk-list govuk-list--bullet">
+
+              <li><a href="https://caseworker-prototype-v1.herokuapp.com/" target="_blank">Version 1</a></li>
+              <ul class="govuk-list govuk-list--bullet"> <p class="govuk-body govuk-!-f-19"> 25 April -13 June 2018 </p>
+                <!-- <div class="govuk-body govuk-!-f-19"><strong class="govuk-body govuk-!-w-bold">What's new:</strong> </div> -->
+              </ul>
+
+
+
+
+      </ul>
+    </div>
+  </details>
+
+
+
+
+        <!-- {{ govukButton({
+          "text": "JUI setup",
+          "href": "/setup"
+        }) }}
+
+        {{ govukButton({
+          "text": "JUI setup",
+          "href": "/app/dashboard"
+        }) }}
+
+        <br>
+
+        {{ govukButton({
+          "text": "Caseworker",
+          "href": "/case-view"
+        }) }}
+
+        <br>
+
+        {{ govukButton({
+          "text": "Tabs",
+          "href": "/tabs"
+        }) }} -->
+
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+
+        <div class="submenu"></div>
+        <br>
+
+
+          <h2 class="govuk-heading-m">
+            Controls
+          </h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="govuk-list govuk-body-s">
+              <li>
+                <a class="govuk-body govuk-!-f-19" href="/prototype-admin/clear-data">
+                  Clear session
+                </a>
+              </li>
+              <!-- <li>
+                <a href="#">
+                  Related link
+                </a>
+              </li> -->
+              <!-- <li>
+                <a href="#" class="govuk-!-w-bold">
+                  More <span class="visuallyhidden">in Subsection</span>
+                </a>
+              </li> -->
+
+            <details class="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                  Set parameters
+                </span>
+              </summary>
+              <div class="govuk-details__text">
+                No parameters to set
+              </div>
+            </details>
+            </ul>
+          </nav>
+
+
+        <br>
+        <aside class="app-related-items" role="complementary">
+            <div class="submenu"></div>
+            <br>
+          <h2 class="govuk-heading-m">
+            Fees and payments prototypes
+          </h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="govuk-list govuk-body-s">
+              <li>
+                <a class="govuk-body govuk-!-f-19" href="https://manage-payments-prototype.herokuapp.com/">
+                  Manage payments to HMCTS
+                </a>
+              </li>
+              <li>
+                <a class="govuk-body govuk-!-f-19" href="https://fee-register-prototype.herokuapp.com/">
+                  Fee register
+                </a>
+              </li>
+              <li>
+                <a class="govuk-body govuk-!-f-19" href="https://payment-by-account-prototype.herokuapp.com/">
+                  Payment by account
+                </a>
+              </li>
+              <li>
+                <a class="govuk-body govuk-!-f-19" href="https://payments-ui-prototype.herokuapp.com/">
+                  Payments UI
+                </a>
+              </li>
+              <li>
+                <a class="govuk-body govuk-!-f-19" href="https://caseworker-prototype.herokuapp.com/">
+                  Caseworker
+                </a>
+              </li>
+              <li>
+                <a class="govuk-body govuk-!-f-19" href="https://service-pay-screens-prototype.herokuapp.com/">
+                  In service payment screens
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        </aside>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+{% endblock %}

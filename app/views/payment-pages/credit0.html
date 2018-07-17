@@ -1,0 +1,340 @@
+{% extends "layouts/admin/base.html" %}
+
+
+{% block body_start %}
+<script>document.body.className = ((document.body.className) ? document.body.className + ' js-tabs-enabled' : 'js-tabs-enabled');</script>
+{% endblock %}
+
+{% block page_title %}RC-1521-1095-0964-3143{% endblock %}
+
+{% block content %}
+
+<div class="jui-width-container">
+
+  <main role="main" class="govuk-main-wrapper">
+
+    <a class="govuk-body govuk-!-f-19" href="/case-list">
+      Case list
+    </a>
+
+    <br>
+    <br>
+
+
+
+    <div id="subHeader">
+       <p class="textWhite">2309-1129-5569-2669 - <strong class="bold-small">Jane Hartley vs Matt Hartley</strong></p>
+       <!-- <p id="paragraphWhite">Print</p> -->
+    </div>
+
+    <br>
+
+
+
+
+  <a href="/case-view-examples" class="govuk-back-link">Back</a>
+
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Payment summary</h1>
+
+
+        <table class="govuk-c-table">
+            <thead class="govuk-c-table__head">
+              <tr class="govuk-c-table__row">
+                <th class="govuk-c-table__header-CCD" scope="col"></th>
+                <th class="govuk-c-table__header-CCD" scope="col"></th>
+                <th class="govuk-c-table__header-CCD" scope="col"></th>
+                </tr>
+
+            </thead>
+              <tbody class="govuk-c-table__body">
+                <!-- <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Number of payments:</th>
+                  <td class="govuk-c-table__cell-CCD-column2-test">1</td>
+                  <td class="govuk-c-table__cell-CCD-column3-test"></td>
+                </tr> -->
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Payment reference:</th>
+                  <td class="govuk-c-table__cell-CCD-column2-test">RC-1521-1095-0964-3143</td>
+                  <td class="govuk-c-table__cell-CCD-column3-test"></td>
+                </tr>
+
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Total payment amount:</th>
+                  <td class="govuk-c-table__cell-CCD-column2-test">£215.00</td>
+                  <td class="govuk-c-table__cell-CCD-column3-test"></td>
+                </tr>
+              </tbody>
+         </table>
+
+         <br>
+
+         <table class="govuk-c-table">
+           <h2>Fee details</h2>
+             <thead class="govuk-c-table__head">
+               <tr class="govuk-c-table__row">
+                 <th class="govuk-c-table__header-CCD" scope="col"></th>
+                 <th class="govuk-c-table__header-CCD" scope="col"></th>
+                 <th class="govuk-c-table__header-CCD" scope="col"></th>
+
+               </tr>
+
+
+             </thead>
+               <tbody class="govuk-c-table__body">
+                 <tr class="govuk-c-table__row">
+                   <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Fee description:</th>
+                   <td class="govuk-c-table__cell-CCD-column2-test">Application for probate</td>
+                   <td class="govuk-c-table__cell-CCD-column3-test"></td>
+                 </tr>
+                 <tr class="govuk-c-table__row">
+                   <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Fee code:</th>
+                   <td class="govuk-c-table__cell-CCD-column2-test">FEE0334</td>
+                   <td class="govuk-c-table__cell-CCD-column3-test"></td>
+                 </tr>
+                 <!-- <tr class="govuk-c-table__row">
+                   <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Remission reference:</th>
+                   <td class="govuk-c-table__cell-CCD-column2-test">PA170855</td>
+                   <td class="govuk-c-table__cell-CCD-column3-test"></td>
+                 </tr> -->
+                 <tr class="govuk-c-table__row">
+                   <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Fee amount:</th>
+                   <td class="govuk-c-table__cell-CCD-column2-test">£215.00</td>
+                   <td class="govuk-c-table__cell-CCD-column3-test"></td>
+                 </tr>
+                 <!-- <tr class="govuk-c-table__row">
+                   <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Remission amount:</th>
+                   <td class="govuk-c-table__cell-CCD-column2-test">-£25.00</td>
+                   <td class="govuk-c-table__cell-CCD-column3-test"></td>
+                 </tr> -->
+                 <tr class="govuk-c-table__row">
+                   <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Net amount:</th>
+                   <td class="govuk-c-table__cell-CCD-column2-test">£215.00</td>
+                   <td class="govuk-c-table__cell-CCD-column3-test"></td>
+                 </tr>
+
+               </tbody>
+          </table>
+
+          <br>
+          <br>
+
+
+          <h2 class="govuk-heading-l">RC-1521-1095-0964-3143</h2>
+
+        <table class="govuk-c-table">
+          <h2>Payment method</h2>
+            <thead class="govuk-c-table__head">
+              <tr class="govuk-c-table__row">
+                <th class="govuk-c-table__header-CCD" scope="col"></th>
+                <th class="govuk-c-table__header-CCD" scope="col"></th>
+                <th class="govuk-c-table__header-CCD" scope="col"></th>
+
+              </tr>
+
+
+            </thead>
+              <tbody class="govuk-c-table__body">
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Type:</th>
+                  <td class="govuk-c-table__cell-CCD-column2-test">Credit</td>
+                  <td class="govuk-c-table__cell-CCD-column3-test"></td>
+                  <tr class="govuk-c-table__row">
+
+                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">PBA account name:</th>
+                    <td class="govuk-c-table__cell-CCD-column2-test">DLA Piper</td>
+                    <td class="govuk-c-table__cell-CCD-column3-test"></td>
+                  </tr>
+                  <tr class="govuk-c-table__row">
+                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">PBA number:</th>
+                    <td class="govuk-c-table__cell-CCD-column2-test">PBA0087711</td>
+                    <td class="govuk-c-table__cell-CCD-column3-test"></td>
+                  </tr>
+                  <tr class="govuk-c-table__row">
+                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Customer internal reference:</th>
+                    <td class="govuk-c-table__cell-CCD-column2-test">NSH/AG02/01044212/1</td>
+                    <td class="govuk-c-table__cell-CCD-column3-test"></td>
+                  </tr>
+
+                  <!-- <tr class="govuk-c-table__row">
+                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Name:</th>
+                    <td class="govuk-c-table__cell-CCD-column2-test">John Brown</td>
+                    <td class="govuk-c-table__cell-CCD-column3-test"></td>
+                  </tr>
+                  <tr class="govuk-c-table__row">
+                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Card number:</th>
+                    <td class="govuk-c-table__cell-CCD-column2-test">**** **** **** 2346</td>
+                    <td class="govuk-c-table__cell-CCD-column3-test"></td>
+                  </tr>
+                  <tr class="govuk-c-table__row">
+                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Card expiry date:</th>
+                    <td class="govuk-c-table__cell-CCD-column2-test">12/20</td>
+                    <td class="govuk-c-table__cell-CCD-column3-test"></td>
+                  </tr> -->
+
+                  <!-- <tr class="govuk-c-table__row">
+                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Name on cheque:</th>
+                    <td class="govuk-c-table__cell-CCD-column2-test">John Brown</td>
+                    <td class="govuk-c-table__cell-CCD-column3-test"></td>
+                  </tr>
+                  <tr class="govuk-c-table__row">
+                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Cheque number:</th>
+                    <td class="govuk-c-table__cell-CCD-column2-test">235976</td>
+                    <td class="govuk-c-table__cell-CCD-column3-test"></td>
+                  </tr>
+                  <tr class="govuk-c-table__row">
+                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Account number:</th>
+                    <td class="govuk-c-table__cell-CCD-column2-test">*****98</td>
+                    <td class="govuk-c-table__cell-CCD-column3-test"></td>
+                  </tr>
+                  <tr class="govuk-c-table__row">
+                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Sort code:</th>
+                    <td class="govuk-c-table__cell-CCD-column2-test">****78</td>
+                    <td class="govuk-c-table__cell-CCD-column3-test"></td>
+                  </tr> -->
+              </tbody>
+         </table>
+
+         <br>
+
+         <table class="govuk-c-table">
+           <h2>Payment history</h2>
+             <thead class="govuk-c-table__head">
+               <tr class="govuk-c-table__row">
+                 <th class="govuk-c-table__header-CCD" scope="col"></th>
+                 <th class="govuk-c-table__header-CCD" scope="col"></th>
+                 <th class="govuk-c-table__header-CCD" scope="col"></th>
+
+               </tr>
+
+
+             </thead>
+               <tbody class="govuk-c-table__body">
+                 <tr class="govuk-c-table__row">
+                   <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Payment pending</th>
+                   <td class="govuk-c-table__cell-CCD-column2-test">£215.00</td>
+                   <td class="govuk-c-table__cell-CCD-column3-test">14 Feb 2018—10:25:12</td>
+                 </tr>
+                 <tr class="govuk-c-table__row">
+                   <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Payment successful</th>
+                   <td class="govuk-c-table__cell-CCD-column2-test">£215.00</td>
+                   <td class="govuk-c-table__cell-CCD-column3-test">28 Feb 2018—12:31:27</td>
+                 </tr>
+
+
+               </tbody>
+          </table>
+
+
+
+
+      </div>
+
+
+
+
+
+      <div class="govuk-grid-column-one-third">
+
+                                <div class="govuk-form-group">
+                          <fieldset class="govuk-fieldset">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                              <h1 class="govuk-fieldset__heading">
+                                Refund
+                              </h1>
+                            </legend>
+                            <span id="changed-name-hint" class="govuk-hint">
+
+                            </span>
+                            <div class="govuk-radios" data-module="radios">
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
+                                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
+                                Full refund
+                              </label>
+                              <span id="email-hint" class="govuk-hint">
+                                refund amount of £215.00
+                              </span>
+                              </div>
+
+                              <div class="govuk-radios__conditional" id="conditional-how-contacted-conditional-1">
+                                  <div class="govuk-form-group">
+                                    <label class="govuk-label" for="select-1">
+                                      Reason for refund
+                                    </label>
+                                    <select class="govuk-select" id="select-1" name="select-1">
+                                      <option value="0"selected>Select</option>
+                                      <option value="1">Petition cannot be issued</option>
+                                      <option value="2">Not provided a valid address for the respondent</option>
+                                      <option value="3">Civil partnership dissolution</option>
+                                      <option value="4">Test payment</option>
+                                    </select>
+                                  </div>
+                                </div>
+
+                                <div class="govuk-radios__item">
+                                  <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
+                                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                                  Part refund
+                                </label>
+                                <span id="email-hint" class="govuk-hint">
+                                  refund a partial amount
+                                </span>
+                                </div>
+
+                                <div class="govuk-radios__conditional" id="conditional-how-contacted-conditional-2">
+                                  <div class="govuk-form-group">
+
+
+                                      <label class="govuk-label" for="email">
+                                        Refund amount
+                                      </label>
+                                      <span id="email-hint" class="govuk-hint">
+
+                                      </span>
+                                      <input class="govuk-input" id="email" name="email" type="text" aria-describedby="email-hint">
+                                    </div>
+
+                                    <br>
+
+                                    <label class="govuk-label" for="select-1">
+                                      Reason for refund
+                                    </label>
+
+                                    <select class="govuk-select" id="select-1" name="select-1">
+                                      <option value="0"selected>Select</option>
+                                      <option value="1">Petition cannot be issued</option>
+                                      <option value="2">Not provided a valid address for the respondent</option>
+                                      <option value="3">Civil partnership dissolution</option>
+                                      <option value="4">Test payment</option>
+                                    </select>
+                                  </div>
+
+                                </div>
+
+
+                              </div>
+                            </fieldset>
+
+                            {{ govukButton({
+                              "text": "Refund",
+                              "href": ""
+                            }) }}
+
+                          </div>
+
+
+        </div>
+
+
+<br>
+
+
+  </main>
+
+</div>
+
+{% endblock %}
